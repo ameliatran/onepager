@@ -214,7 +214,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 /*---------------------HEADER SECTION----------------------------*/
 .header {
 	left: 0;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 999;
@@ -266,12 +266,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	font-weight: bold;
 	padding: 15px 20px;
 	text-transform: uppercase;
-}
-
-@media (max-width: 768px) {
-    .nav-wrapper {
-    display: none;
-}
 }
 
 .shrink .menu-box .navigation li a {

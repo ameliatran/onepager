@@ -4,13 +4,13 @@
 	
     $(window).on("load", function() { // makes sure the whole site is loaded
 
-    // $(window).scroll(function(){                          
-    //         if ($(this).scrollTop() > 200) {
-    //             $('.header').fadeIn(500);
-    //         } else {
-    //             $('.header').fadeOut(500);
-    //         }
-    //     });
+    $(window).scroll(function(){                          
+            if ($(this).scrollTop() > 200 || $(this).scrollTop() === 0) {
+                $('.header').fadeIn(500);
+            } else {
+                $('.header').fadeOut(500);
+            }
+        });
 
         //preloader
         $("#status").fadeOut(); // will first fade out the loading animation
